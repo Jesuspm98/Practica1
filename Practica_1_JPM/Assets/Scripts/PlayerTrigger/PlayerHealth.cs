@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -26,8 +27,9 @@ public class PlayerHealth : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            Debug.Log("Estas muerto");
-            transform.position = InitialPosition;
+            Debug.Log("Has muerto");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            //transform.position = InitialPosition;
             currentHealth = MaxHealth;
             healthText.text = currentHealth.ToString();
         }
