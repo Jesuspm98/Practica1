@@ -30,4 +30,8 @@ public class CoinCounter : MonoBehaviour
             amountCounterText.text = currentNumberOfCoins.ToString();
         }
     }
+
+    public virtual void OpenDoorBcCoins(GameObject gameObject)
+    {
+    }
 }
