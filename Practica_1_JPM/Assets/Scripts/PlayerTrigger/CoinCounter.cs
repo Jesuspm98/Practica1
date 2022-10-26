@@ -31,7 +31,7 @@ public class CoinCounter : MonoBehaviour
         }
     }
 
-    public virtual void OpenDoorBcCoins(GameObject gameObject)
+    public virtual void OpenDoorBcCoins(GameObject playerObject)
     {
     }
 }
