@@ -9,6 +9,8 @@ public class CoinCounter : MonoBehaviour
 
     public Text amountCounterText;
 
+    public GameObject doorFalse;
+
     private void Start()
     {
         amountCounterText.text = currentNumberOfCoins.ToString();
@@ -29,9 +31,10 @@ public class CoinCounter : MonoBehaviour
             Debug.Log("Has recogido una moneda, tienes: " + currentNumberOfCoins + " monedas.");
             amountCounterText.text = currentNumberOfCoins.ToString();
         }
-    }
 
-    public virtual void OpenDoorBcCoins(GameObject playerObject)
-    {
+        if (currentNumberOfCoins == 5)
+        {
+            doorFalse.SetActive(false);
+        }
     }
 }
