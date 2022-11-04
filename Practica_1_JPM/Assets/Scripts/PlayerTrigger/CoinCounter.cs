@@ -9,7 +9,9 @@ public class CoinCounter : MonoBehaviour
 
     public Text amountCounterText;
 
-    public GameObject doorFalse;
+    public GameObject doorBlock1;
+
+    public GameObject doorBlock2;
 
     private void Start()
     {
@@ -34,7 +36,16 @@ public class CoinCounter : MonoBehaviour
 
         if (currentNumberOfCoins == 5)
         {
-            doorFalse.SetActive(false);
+            doorBlock1.SetActive(false);
+
+            Debug.Log("Oh, parece que se ha abierto algo...");
+        }
+
+        if (currentNumberOfCoins == 10)
+        {
+            doorBlock2.SetActive(false);
+
+            Debug.Log("¡Tengo las 10 monedas, la última puerta se ha abierto!");
         }
     }
 }

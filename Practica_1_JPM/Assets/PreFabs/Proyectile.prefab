@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7161950574937841136}
   - component: {fileID: 7161950574937841137}
   - component: {fileID: 7161950574937841150}
-  - component: {fileID: 7161950574937841151}
-  - component: {fileID: 8850317263833084608}
-  - component: {fileID: 6362397523303237287}
+  - component: {fileID: 8185281023347855648}
+  - component: {fileID: 1694674399941976558}
+  - component: {fileID: 2056293613514162821}
   m_Layer: 0
   m_Name: Proyectile
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7161950574937841148}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.06, z: -3.19}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -98,7 +98,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7161950574937841151
+--- !u!114 &8185281023347855648
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,11 +107,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7161950574937841148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c750dafce8b65b741b57a90e3ca0851d, type: 3}
+  m_Script: {fileID: 11500000, guid: c21d9d8fe78eba947bf9dc2a10640e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingSpeed: 9
---- !u!114 &8850317263833084608
+  movingSpeed: 5
+--- !u!114 &1694674399941976558
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,11 +120,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7161950574937841148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7acba0f6f449d7f4183bce05d9402f4f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d163f35e292ac44689480984f876031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timeToDestroy: 2
---- !u!114 &6362397523303237287
+--- !u!114 &2056293613514162821
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7161950574937841148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0bf53d727182554287d4229c5f731b4, type: 3}
+  m_Script: {fileID: 11500000, guid: f828e08b7ef40a442ba0d116a0ac8df4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dmgAmount: 1
